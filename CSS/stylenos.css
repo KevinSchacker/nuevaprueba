@@ -1,0 +1,89 @@
+#nosotros {
+    max-width: 800px; /* Limita el ancho del contenido  */
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+#nosotros h2 {
+    text-align: center; /* Centra el título horizontalmente */
+    color:  rgb(134, 29, 34); 
+}
+
+#nosotros p {
+    line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
+    text-align: justify; /* Justifica el texto para un aspecto más limpio */
+    color: #666; /* Color del texto del párrafo */
+}
+footer {
+    text-align: center;
+    background-color: #d7d7d8;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: monospace;
+    color: #050505;
+    position: fixed; 
+    bottom: 0; /* Lo coloca en la parte inferior de la ventana */
+    left: 0; 
+    width: 100%; /* Ocupa todo el ancho*/
+}
+#TITLEPPL {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+#TITLEPPL img {
+    max-width: 50%; 
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar el contenido verticalmente */
+    height: 3vh; /* Establecer la altura del contenedor al 100% del viewport */
+}
+
+#menu {
+    justify-content:center;
+    overflow: hidden;
+    margin-top: 20px; /* Espacio arriba del menú */
+}
+
+#menu a {
+    float: left;
+    display: center;
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Aumentamos el espacio horizontal */
+    text-decoration:none;
+    margin: 0 10px; /* Espacio entre los botones */
+    
+}
+
+.boton-quienes-somos {
+    background-color: #03aef1; 
+}
+
+.boton-tecnologia {
+    background-color: #03aef1; 
+}
+
+.boton-seguridad {
+    background-color: #03aef1; 
+}
+
+.boton-contacto {
+    background-color: #03aef1; 
+}
+#productos {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+#productos h2 {
+    margin-top: 40px; /* Agrega espacio en la parte superior del título */
+    color: rgb(134, 29, 34);
+}
+
+#menu a:hover {
+    background-color: rgb(134, 29, 34);
+    color: black;
+}

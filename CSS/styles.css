@@ -1,0 +1,142 @@
+
+#TITLEPPL {
+    text-align: center; 
+}
+
+#TITLEPPL img {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; 
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 3vh; 
+}
+
+#menu {
+    justify-content:center;
+    overflow: hidden;
+    margin-top: 20px; 
+}
+
+#menu a {
+    float: left;
+    display: center;
+    color: white;
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration:none;
+    margin: 0 10px; 
+}
+
+.boton-quienes-somos {
+    background-color: #03aef1; 
+}
+
+.boton-tecnologia {
+    background-color: #03aef1; 
+}
+
+.boton-seguridad {
+    background-color: #03aef1; 
+}
+
+.boton-contacto {
+    background-color: #03aef1; 
+}
+#productos {
+    text-align: center; /* Centra el texto horizontalmente */
+}
+#productos h2 {
+    margin-top: 40px; /* Agrega espacio en la parte superior del título */
+    color: rgb(134, 29, 34);;
+}
+
+#menu a:hover {
+    background-color: rgb(134, 29, 34);
+    color: black;
+}
+.productos-slider {
+    margin-top: 10%;
+    display: flex; /* Utiliza el modelo de caja flexible para alinear las imágenes */
+    justify-content: space-between; /* Distribuye las imágenes horizontalmente */
+    align-items: center; 
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+}
+
+.productos-slider div {
+    flex: 0 0 33.33%; /* Establece el ancho de cada imagen al 33.33% del ancho de la página */
+    margin: 0; /* Elimina cualquier margen entre las imágenes */
+    padding: 0; /* Elimina cualquier relleno entre las imágenes */
+}
+
+.productos-slider img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+}
+footer {
+    text-align: center;
+    background-color: #d7d7d8;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: monospace;
+    color: #050505;
+    position: fixed; 
+    bottom: 0; /* Lo coloca en la parte inferior de la ventana */
+    left: 0; 
+    width: 100%; /* Ocupa todo el ancho*/
+}
+#tecnologia {
+    max-width: 800px; /* Limita el ancho del contenido  */
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+#tecnologia h2 {
+    text-align: center; 
+    color:  rgb(134, 29, 34); /*Color Marca*/
+}
+
+#tecnologia p {
+    line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
+    text-align: justify; /* Justifica el texto para un aspecto más limpio */
+    color: #666; 
+}
+
+#seguridad  {
+    max-width: 800px; /* Limita el ancho del contenido  */
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+#seguridad h2 {
+    text-align: center; /* Centra el título horizontalmente */
+    color:  rgb(134, 29, 34); 
+}
+
+#seguridad p {
+    line-height: 1.6; 
+    text-align: justify; 
+    color: #666; 
+}
+#redes-sociales {
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+#redes-sociales h2 {
+    margin-top: 40px; 
+    color: rgb(134, 29, 34);
+}
