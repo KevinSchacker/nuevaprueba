@@ -16,7 +16,7 @@ body {
     padding: 0;
     background-color: #fafafa; 
     box-sizing: border-box; /* Incluye el modelo de caja */
-    background-image: url(/img/fondo/fondo2.jpg); /* Ruta de la imagen de fondo */
+    background-image: url(../img/fondo/fondo2.jpg); /* Ruta de la imagen de fondo */
     background-size: cover; /* Escalar la imagen para cubrir todo el fondo */
     background-position: center; /* Posicionar la imagen en el centro */
     background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
