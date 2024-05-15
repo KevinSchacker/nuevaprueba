@@ -156,3 +156,7 @@ footer {
     margin: 0 auto; /* Centra horizontalmente las imágenes */
     object-fit: contain; /* Escala la imagen para que quepa dentro de su contenedor manteniendo su relación de aspecto */
 }
+#menu a:hover {
+    background-color: rgb(134, 29, 34);
+    color: black;
+}
