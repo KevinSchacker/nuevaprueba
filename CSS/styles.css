@@ -1,23 +1,28 @@
-
-#TITLEPPL {
+/* Estilos para el encabezado */
+#titleppl {
     text-align: center; 
 }
 
-#TITLEPPL img {
+#titleppl img {
     max-width: 50%; 
     height: auto; 
     display: block; 
     margin: 0 auto; 
 }
-
-
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fafafa; 
+    box-sizing: border-box; /* Incluye el modelo de caja */
+    background-image: url(/img/fondo/fondo2.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el fondo */
+    background-position: center; /* Posicionar la imagen en el centro */
+    background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
 }
 
+/* Estilos para el contenedor principal */
 .container {
     display: flex;
     justify-content: center; 
@@ -25,15 +30,15 @@ body {
     height: 3vh; 
 }
 
+/* Estilos para el menú de navegación */
 #menu {
     justify-content:center;
     overflow: hidden;
     margin-top: 20px; 
+    display: flex; /* Utilizando Flexbox */
 }
 
 #menu a {
-    float: left;
-    display: center;
     color: white;
     text-align: center;
     padding: 14px 20px; 
@@ -41,51 +46,45 @@ body {
     margin: 0 10px; 
 }
 
-.boton-quienes-somos {
-    background-color: #03aef1; 
-}
-
-.boton-tecnologia {
-    background-color: #03aef1; 
-}
-
-.boton-seguridad {
-    background-color: #03aef1; 
-}
-
+/* Estilos para los botones del menú */
+.boton-quienes-somos,
+.boton-tecnologia,
+.boton-seguridad,
 .boton-contacto {
     background-color: #03aef1; 
 }
+
+/* Estilos para la sección de productos */
 #productos {
-    text-align: center; /* Centra el texto horizontalmente */
-}
-#productos h2 {
-    margin-top: 40px; /* Agrega espacio en la parte superior del título */
-    color: rgb(134, 29, 34);;
+    text-align: center;
 }
 
-#menu a:hover {
-    background-color: rgb(134, 29, 34);
-    color: black;
+#productos h2 {
+    margin-top: 40px;
+    color: rgb(134, 29, 34);
 }
+
+/* Estilos para el slider de productos */
 .productos-slider {
     margin-top: 10%;
-    display: flex; /* Utiliza el modelo de caja flexible para alinear las imágenes */
-    justify-content: space-between; /* Distribuye las imágenes horizontalmente */
+    display: flex;
+    justify-content: space-between;
     align-items: center; 
-    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    flex-wrap: nowrap;
 }
 
 .productos-slider div {
-    flex: 0 0 33.33%; /* Establece el ancho de cada imagen al 33.33% del ancho de la página */
-    margin: 0; /* Elimina cualquier margen entre las imágenes */
-    padding: 0; /* Elimina cualquier relleno entre las imágenes */
+    flex: 0 0 33.33%;
+    margin: 0;
+    padding: 0;
 }
 
 .productos-slider img {
-    max-width: 100%; /* Asegura que las imágenes no se desborden del contenedor */
-    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+    max-width: 100%;
+    height: auto;
 }
+
+/* Estilos para el pie de página */
 footer {
     text-align: center;
     background-color: #d7d7d8;
@@ -93,50 +92,67 @@ footer {
     font-size: 14px;
     font-family: monospace;
     color: #050505;
-    position: fixed; 
-    bottom: 0; /* Lo coloca en la parte inferior de la ventana */
-    left: 0; 
-    width: 100%; /* Ocupa todo el ancho*/
-}
-#tecnologia {
-    max-width: 800px; /* Limita el ancho del contenido  */
-    margin: 0 auto; 
-    padding: 20px; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-#tecnologia h2 {
-    text-align: center; 
-    color:  rgb(134, 29, 34); /*Color Marca*/
-}
-
-#tecnologia p {
-    line-height: 1.6; /* Ajusta la altura de línea para una mejor legibilidad */
-    text-align: justify; /* Justifica el texto para un aspecto más limpio */
-    color: #666; 
-}
-
-#seguridad  {
-    max-width: 800px; /* Limita el ancho del contenido  */
-    margin: 0 auto; 
-    padding: 20px; 
-}
-
-#seguridad h2 {
-    text-align: center; /* Centra el título horizontalmente */
-    color:  rgb(134, 29, 34); 
-}
-
-#seguridad p {
-    line-height: 1.6; 
-    text-align: justify; 
-    color: #666; 
+/* Estilos para las secciones de contenido */
+#tecnologia,
+#seguridad,
+#redes-sociales {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 #redes-sociales {
     text-align: center;
     margin-bottom: 40px;
-
 }
+#tecnologia h2,
+#seguridad h2,
 #redes-sociales h2 {
-    margin-top: 40px; 
+    text-align: center;
     color: rgb(134, 29, 34);
+}
+
+#tecnologia p,
+#seguridad p {
+    line-height: 1.6;
+    text-align: justify;
+    color: #666;
+}
+
+/* Estilos responsivos */
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+    #titleppl img {
+        max-width: 100%; 
+    }
+
+    #menu {
+        display: block;
+        margin-top: 10px;
+    }
+
+    #menu a {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Ajustes para el slider de productos */
+    .productos-slider div {
+        flex: 0 0 100%;
+    }
+}
+.carousel-item img {
+    max-width: 100%; /* Establece el ancho máximo de las imágenes del carrusel */
+    max-height: 70vh; /* Establece la altura máxima de las imágenes del carrusel */
+    width: auto; /* Ancho automático para mantener la relación de aspecto */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    object-fit: contain; /* Escala la imagen para que quepa dentro de su contenedor manteniendo su relación de aspecto */
 }
